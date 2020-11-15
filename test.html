@@ -8,40 +8,182 @@
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+
+  <style type="text/css">
+    .clear{
+    clear:both; 
+    display:block; 
+    height:0; 
+    width:auto;
+}
+
+.faq-row-container{
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+.faq-row {
+   /* background-color: #fff;
+    border: #ccc 1px solid;
+    margin-bottom: 12px;
+    position:relative;
+    overflow:hidden;*/
+}
+
+.faq-row-handle {
+    /*border:#ccc 1px solid; */
+    border-bottom:none;
+}
+
+.faq-row-handle > a {
+    cursor: pointer;
+    display: block;
+    color: #191919;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 7px 30px 7px 10px;
+    line-height: 20px;
+    text-decoration: none;
+    outline: 0;
+    float:left;
+     border-right: #ccc 1px solid;
+}
+
+.faq-row-handle a.open{
+   color:green;
+}
+
+.faq-row-content {
+    color: #666;
+    font-weight: normal;
+    line-height: 150%;
+    font-size: 13px;
+    display: none;
+    position:absolute;
+    top:0;
+    left:101px;
+}
+
+.faq-row-content.open{
+    display:block;
+}
+
+.faq-row-content p {
+    padding: 0 14px 10px 14px;
+}
+  </style>
 </head>
 <body>
 
   
 
-<!-- ////// -->
-
-      <div class="iMeRMz" id="card-counter">
-                    <button class=" hQDaWZ control-button" id="decrement">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
-                    </button>
-                    <span class=" fWCkFI" id=demoInput type=number min=1 max=100></span>
-                    <button class=" hQDaWZ control-button" id="increment">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg>
-                    </button>
+      <div class="faq-row-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="row">
+                <div class="col-2">
+                    <div class="faq-row-handle">
+                      <div  rel="item1">1. item</div> 
+                 
+                    </div>
+                </div>
+                <div class="col-2">
+                  <div class="faq-row-handle">  
+                    <div  rel="item2">2. item</div>
                   </div>
+                </div>
+                <div class="col-2">
+                  <div class="faq-row-handle">  
+                    <div  rel="item3">3. item</div>
+                  </div>
+                </div>
+              </div>
+                <!-- <div class="faq-row-handle">  
+                  <a href="javascript:;" rel="item3">3. item</a>
+                  <a href="javascript:;" rel="item4">4. item</a>
+                  <a href="javascript:;" rel="item5">5. item</a>
+                  <a href="javascript:;" rel="item6">6. item</a>
+                  <div class="clear"></div>
+                </div> -->
+            </div>
+            <div class="col-md-9">
+                   <div class="faq-row">
+                
+                <div id="item1" class="faq-row-content">
+                    <p>1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+                <div id="item2" class="faq-row-content">
+                    <p>2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                
+           <!--      <div id="item3" class="faq-row-content">
+                    <p>3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic ions of Lorem Ipsum.</p>
+                </div>
+                
+                <div id="item4" class="faq-row-content">
+                    <p>4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen</p>
+                </div>
+                
+                <div id="item5" class="faq-row-content">
+                    <p>5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                </div>
+                
+                
+                <div id="item6" class="faq-row-content">
+                    <p>6 Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div> -->
+                
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    
+
 
 
 <script>
-    var x = 1;
-  /*  var span = document.querySelector('span'); */
-    var span = document.getElementById('demoInput'); // find the <span> element in the DOM
-    var increment = document.getElementById('increment'); // find the element with the ID 'increment'
-    var decrement = document.getElementById('decrement'); // find the element with the ID 'decrement'
+  $(document).ready(function() {
 
-    increment.addEventListener('click', function () {
-      // this function is executed whenever the user clicks the increment button
-      span.textContent = x++;
+  var tab = $('.faq-row-handle > div'),
+    tabContent = $('.faq-row-content'),
+    tabParent = $('.faq-row');
+
+  if (tab.length) {
+
+    tab.off('click').on('click', function() {
+
+      var ele = $(this),
+        currContent = $('#' + ele.attr('rel'));
+
+      if (!ele.hasClass('open')) {
+
+        tabParent.stop(true, true).animate({
+          height: '0px'
+
+        }, function() {
+          tabContent.removeClass('open');
+          currContent.addClass('open');
+          tab.removeClass('open');
+          ele.addClass('open');
+
+          tabParent.stop(true, true).animate({
+            height: currContent.height() + 'px'
+          });
+
+        });
+
+      }
+
     });
 
-    decrement.addEventListener('click', function () {
-      // this function is executed whenever the user clicks the decrement button
-      span.textContent = x--;
-    });
+    $('.faq-row-handle > a:eq(0)').click();
+  }
+
+});
+
 </script>
 
 
