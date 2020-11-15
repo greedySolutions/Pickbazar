@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  
+
+<!-- ////// -->
+
+      <div class="iMeRMz" id="card-counter">
+                    <button class=" hQDaWZ control-button" id="decrement">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="2px" viewBox="0 0 12 2"><rect data-name="Rectangle 522" width="12" height="2" rx="1" fill="currentColor"></rect></svg>
+                    </button>
+                    <span class=" fWCkFI" id=demoInput type=number min=1 max=100></span>
+                    <button class=" hQDaWZ control-button" id="increment">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 12 12"><g id="Group_3351" data-name="Group 3351" transform="translate(-1367 -190)"><rect data-name="Rectangle 520" width="12" height="2" rx="1" transform="translate(1367 195)" fill="currentColor"></rect><rect data-name="Rectangle 521" width="12" height="2" rx="1" transform="translate(1374 190) rotate(90)" fill="currentColor"></rect></g></svg>
+                    </button>
+                  </div>
+
+
+<script>
+    var x = 1;
+  /*  var span = document.querySelector('span'); */
+    var span = document.getElementById('demoInput'); // find the <span> element in the DOM
+    var increment = document.getElementById('increment'); // find the element with the ID 'increment'
+    var decrement = document.getElementById('decrement'); // find the element with the ID 'decrement'
+
+    increment.addEventListener('click', function () {
+      // this function is executed whenever the user clicks the increment button
+      span.textContent = x++;
+    });
+
+    decrement.addEventListener('click', function () {
+      // this function is executed whenever the user clicks the decrement button
+      span.textContent = x--;
+    });
+</script>
+
+
+</body>
+</html>
