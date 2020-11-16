@@ -12,60 +12,57 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
 
 
 <style type="text/css">
-	.bordered{
-  border: 3px solid red;
+	div {
+  padding:20px;
+  border:2px solid black;
+  border-radius:4px;
 }
-
-.trashitem{
-  display: inline-block;
-  margin: 20px;
-  width: 100px;
-  height: 100px;
+#d4 {
+  background-color:lightblue;
+  position:absolute;
+  top:30px;
+  left:20px;
 }
-
-.trashitem img{
-  width: 100%;
-  height: 100%;
+#d3 {
+  background-color:lightgreen;
+  position:absolute;
+  top:70px;
+  left:20px;
 }
-Click 
+#d2 {
+  background-color:yellow;
+  position:absolute;
+  top:30px;
+  left:70px;
+}
+#d1 {
+  background-color:pink;
+  position:absolute;
+  top:70px;
+  left:70px;
+}
+<htm
 </style>
 </head>
 <body>
 
- 		<div class="trashitem">
-		    <div class="photobox">
-		        <img src="http://i.stack.imgur.com/gijdH.jpg?s=328&g=1">
-		    </div>
-		</div>
-		<div class="trashitem" >
-		    <div class="photobox">
-		        <img src="http://i.stack.imgur.com/gijdH.jpg?s=328&g=1">
-		    </div>
-		</div>
-		<div class="trashitem" >
-		    <div class="photobox">
-		        <img src="http://i.stack.imgur.com/gijdH.jpg?s=328&g=1">
-		    </div>
-		</div>
+	 <div id="d1">div1</div>
+  <div id="d2">div2</div>
+  <div id="d3">div3</div>
+  <div id="d4">div4</div>
 
+ 		<script type="text/javascript">
+ 			var allDivs = document.getElementsByTagName("div"); //Changed variable name to 'allDivs' because the name 'all' generated an error.
+var prev = false;
 
-		<script type="text/javascript">
-			window.onload = function (event) {
-
-    var myitem = document.querySelectorAll(".trashitem");
-    for(h=0; h<myitem.length; h++){
-        myitem[h].onclick = function(e){
-            var myitem = document.querySelectorAll(".trashitem");
-
-            for(h=0; h<myitem.length; h++){
-                myitem[h].classList.remove("bordered");
-            }
-
-            this.classList.add("bordered");
-
-        };
+for(ii = 0; ii < allDivs.length; ii++) { // changed the for variable to 'ii' instead of 'i'  so i can find it easier (searching for 'i' will return avery instance of the letter i, even inside words, not just the variable, whereas ii is unique).
+    allDivs[ii].onclick = function() {
+		this.style.position = 'absolute'; //You have to have a position type defined. It doesn't matter what type, you just have to. If you define it elsewhere in your styles you can remove this.
+        if (prev) { prev.style.zIndex = 1; }
+        this.style.zIndex = 1000;
+        prev = this;
     }
-};
-		</script>
+}
+ 		</script>
 </body>
 </html>
