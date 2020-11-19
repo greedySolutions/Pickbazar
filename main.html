@@ -18,7 +18,7 @@
          <div class="lefttab">
             <ul class="my-nav">
               <li class="category">
-                <details class="dropdown">
+                <details class="dropdown ">
                   <summary class="on_off">
                     <svg  xmlns="http://www.w3.org/2000/svg" width="20.347" height="24.101" viewBox="0 0 20.347 24.101"><g id="Grocery" transform="translate(-39.481 0.052)"><path id="Path_17386" data-name="Path 17386" d="M349.261,399.988a.469.469,0,1,1,.461-.385A.473.473,0,0,1,349.261,399.988Z" transform="translate(-294.289 -380.346)" fill="currentColor" stroke="currentColor" stroke-width="0.1"></path><path id="Path_17387" data-name="Path 17387" d="M58.743,8.638A6.2,6.2,0,0,0,55.4,6.3a6.662,6.662,0,0,0-3.058.055h0l-.034.008-.091.02c-.074.017-.188.045-.31.076-.16.041-.323.078-.485.108q0-.182-.014-.374a6.162,6.162,0,0,1,1.87-3.956A6.643,6.643,0,0,1,55.212.9.469.469,0,0,0,54.87.032a7.448,7.448,0,0,0-2.223,1.509,7.229,7.229,0,0,0-1.659,2.437,4.837,4.837,0,0,0-1.119-1.837C47.744.019,43.762.68,43.527.721h0a.457.457,0,0,0-.367.314.6.6,0,0,0-.017.066c-.027.151-.573,3.346.8,5.557a7.353,7.353,0,0,0-3.914,6.923,11.6,11.6,0,0,0,1.142,4.581,14.2,14.2,0,0,0,2.744,4.091A5.044,5.044,0,0,0,47.309,24a6.6,6.6,0,0,0,1.88-.276A3.331,3.331,0,0,1,51,23.691l.006,0,.11.031A6.6,6.6,0,0,0,53,24a4.912,4.912,0,0,0,3.25-1.608,13.985,13.985,0,0,0,4.029-8.812A8.163,8.163,0,0,0,58.743,8.638ZM49.206,2.8a5.247,5.247,0,0,1,1.256,3.409c-.017.211-.025,1.132-.025,1.132L46.881,3.794a.469.469,0,0,0-.663.663L49.8,8.033c-1.224.066-3.343-.027-4.572-1.255C43.75,5.3,43.912,2.552,44.02,1.6c.953-.108,3.709-.27,5.185,1.2ZM55.6,21.716A4.033,4.033,0,0,1,53,23.062a5.728,5.728,0,0,1-1.609-.236l-.141-.04h0a4.269,4.269,0,0,0-2.329.04,5.728,5.728,0,0,1-1.609.236A4.172,4.172,0,0,1,44.58,21.59a13.058,13.058,0,0,1-3.612-8.009c0-3.445,1.878-5.444,3.571-6.163l.024.024a6.632,6.632,0,0,0,4.665,1.547A9.91,9.91,0,0,0,50.9,8.863c.374-.082.365-.256.388-.364V8.482a9.219,9.219,0,0,0,.107-.965.475.475,0,0,0,.083-.007c.22-.038.441-.085.658-.142.084-.022.165-.042.232-.058,1.934.674,3.846,2.849,3.846,6.269a9.857,9.857,0,0,1-.747,3.455.469.469,0,1,0,.874.339,10.789,10.789,0,0,0,.811-3.795,7.594,7.594,0,0,0-3.162-6.493,4.317,4.317,0,0,1,1.17.122c2.013.521,4.18,2.737,4.18,6.371A13.138,13.138,0,0,1,55.6,21.716Z" transform="translate(-0.5)" fill="currentColor" stroke="currentColor" stroke-width="0.1"></path></g></svg>
                   <span class="categoryname">Vegetables & Fruits  </span>     
@@ -27,18 +27,18 @@
                   </summary>
                   
               
-                 <ul class="subcategory" style="opacity: 1; height: auto;">
-                  <li data-toggle="tab" href="#fruits">Fruits</li>
-                  <li data-toggle="tab" href="#vegetables">Vegetables</li>
-                </ul> 
-              <!--   <div class="subcategory" style="opacity: 1; height: auto;">
-                  <div>
-                    <a data-toggle="tab" class="clickMe" href="#fruits">Fruits</a>
+                 <ul class="subcategory faq-row-handle" style="opacity: 1; height: auto;">
+                  <li  rel="fruits">Fruits</li>
+                  <li  rel="vegetables">Vegetables</li>
+                </ul>  
+               <!--   <div class="subcategory faq-row-handle" style="opacity: 1; height: auto;">
+                  <div  rel="fruits">
+                    <a  class="clickMe">Fruits</a>
                   </div>
-                  <div>
-                    <a data-toggle="tab" class="clickMe" href="#vegetables">Vegetables</a>
+                  <div rel="vegetables">
+                    <a  class="clickMe" >Vegetables</a>
                   </div>
-                </div> -->
+                </div>  -->
                 
                 </details>
                 
@@ -82,131 +82,138 @@
             </ul>
          </div>
       </div>
+
+          <!--product grid show-->
        <div class="col-9 tabContent">
-            <div class="row editRow tab-pane fade in active" id="fruits">
-              <div class="col-2">
-                <div class="card">
-                    <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
-                    <div class="card-body">
-                     <h5 class="card-title">Cherry</h5>
-                     <p class="card-text">0.5lb</p>
-                     <div class="bottom_part">
-                       <div class="row">
-                         <div class="col" style="margin-top: 10px">
-                           <span class="product-price">$2</span>
-                         </div>
-                         <div class="col">
-                           <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
-                            <span class=" wdrTM">Cart</span></button>
-                         </div>
-                       </div>
-                     </div>
-                    </div>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="card">
-                    <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
-                    <div class="card-body">
-                     <h5 class="card-title">Cherry</h5>
-                     <p class="card-text">0.5lb</p>
-                     <div class="bottom_part">
-                       <div class="row">
-                         <div class="col" style="margin-top: 10px">
-                           <span class="product-price">$2</span>
-                         </div>
-                         <div class="col">
-                           <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
-                            <span class=" wdrTM">Cart</span></button>
+            <div class="row editRow active" >
+              <div id="fruits" class="faq-row-content">
+                <div class="row">
+                  <div class="col-2">
+                    <div class="card">
+                      <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
+                      <div class="card-body">
+                       <h5 class="card-title">Cherry</h5>
+                       <p class="card-text">0.5lb</p>
+                       <div class="bottom_part">
+                         <div class="row">
+                           <div class="col" style="margin-top: 10px">
+                             <span class="product-price">$2</span>
+                           </div>
+                           <div class="col">
+                             <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
+                              <span class=" wdrTM">Cart</span></button>
+                           </div>
                          </div>
                        </div>
-                     </div>
+                      </div>
                     </div>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="card">
-                    <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
-                    <div class="card-body">
-                     <h5 class="card-title">Cherry</h5>
-                     <p class="card-text">0.5lb</p>
-                     <div class="bottom_part">
-                       <div class="row">
-                         <div class="col" style="margin-top: 10px">
-                           <span class="product-price">$2</span>
+                  </div>
+                  <div class="col-2">
+                    <div class="card">
+                        <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
+                        <div class="card-body">
+                         <h5 class="card-title">Cherry</h5>
+                         <p class="card-text">0.5lb</p>
+                         <div class="bottom_part">
+                           <div class="row">
+                             <div class="col" style="margin-top: 10px">
+                               <span class="product-price">$2</span>
+                             </div>
+                             <div class="col">
+                               <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
+                                <span class=" wdrTM">Cart</span></button>
+                             </div>
+                           </div>
                          </div>
-                         <div class="col">
-                           <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
-                            <span class=" wdrTM">Cart</span></button>
-                         </div>
-                       </div>
-                     </div>
+                        </div>
                     </div>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="card">
-                    <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
-                    <div class="card-body">
-                     <h5 class="card-title">Cherry</h5>
-                     <p class="card-text">0.5lb</p>
-                     <div class="bottom_part">
-                       <div class="row">
-                         <div class="col" style="margin-top: 10px">
-                           <span class="product-price">$2</span>
+                  </div>
+                  <div class="col-2">
+                    <div class="card">
+                        <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
+                        <div class="card-body">
+                         <h5 class="card-title">Cherry</h5>
+                         <p class="card-text">0.5lb</p>
+                         <div class="bottom_part">
+                           <div class="row">
+                             <div class="col" style="margin-top: 10px">
+                               <span class="product-price">$2</span>
+                             </div>
+                             <div class="col">
+                               <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
+                                <span class=" wdrTM">Cart</span></button>
+                             </div>
+                           </div>
                          </div>
-                         <div class="col">
-                           <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
-                            <span class=" wdrTM">Cart</span></button>
-                         </div>
-                       </div>
-                     </div>
+                        </div>
                     </div>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="card">
-                    <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
-                    <div class="card-body">
-                     <h5 class="card-title">Cherry</h5>
-                     <p class="card-text">0.5lb</p>
-                     <div class="bottom_part">
-                       <div class="row">
-                         <div class="col" style="margin-top: 10px">
-                           <span class="product-price">$2</span>
+                  </div>
+                  <div class="col-2">
+                    <div class="card">
+                        <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
+                        <div class="card-body">
+                         <h5 class="card-title">Cherry</h5>
+                         <p class="card-text">0.5lb</p>
+                         <div class="bottom_part">
+                           <div class="row">
+                             <div class="col" style="margin-top: 10px">
+                               <span class="product-price">$2</span>
+                             </div>
+                             <div class="col">
+                               <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
+                                <span class=" wdrTM">Cart</span></button>
+                             </div>
+                           </div>
                          </div>
-                         <div class="col">
-                           <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
-                            <span class=" wdrTM">Cart</span></button>
-                         </div>
-                       </div>
-                     </div>
+                        </div>
                     </div>
-                </div>
-              </div>
-              <div class="col-2">
-                <div class="card">
-                    <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
-                    <div class="card-body">
-                     <h5 class="card-title">Cherry</h5>
-                     <p class="card-text">0.5lb</p>
-                     <div class="bottom_part">
-                       <div class="row">
-                         <div class="col" style="margin-top: 10px">
-                           <span class="product-price">$2</span>
+                  </div>
+                  <div class="col-2">
+                    <div class="card">
+                        <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
+                        <div class="card-body">
+                         <h5 class="card-title">Cherry</h5>
+                         <p class="card-text">0.5lb</p>
+                         <div class="bottom_part">
+                           <div class="row">
+                             <div class="col" style="margin-top: 10px">
+                               <span class="product-price">$2</span>
+                             </div>
+                             <div class="col">
+                               <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
+                                <span class=" wdrTM">Cart</span></button>
+                             </div>
+                           </div>
                          </div>
-                         <div class="col">
-                           <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
-                            <span class=" wdrTM">Cart</span></button>
-                         </div>
-                       </div>
-                     </div>
+                        </div>
                     </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="card">
+                        <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
+                        <div class="card-body">
+                         <h5 class="card-title">Cherry</h5>
+                         <p class="card-text">0.5lb</p>
+                         <div class="bottom_part">
+                           <div class="row">
+                             <div class="col" style="margin-top: 10px">
+                               <span class="product-price">$2</span>
+                             </div>
+                             <div class="col">
+                               <button class=" dDahSG cart-button"><svg xmlns="http://www.w3.org/2000/svg" width="14.4px" height="12px" viewBox="0 0 14.4 12" fill="currentColor" class="box__Box-sc-5533u7-0 eOxrOz"><g data-name="Group 120" transform="translate(-288 -413.89)"><path data-name="Path 154" fill="currentColor" d="M298.7,418.289l-2.906-4.148a.835.835,0,0,0-.528-.251.607.607,0,0,0-.529.251l-2.905,4.148h-3.17a.609.609,0,0,0-.661.625v.191l1.651,5.84a1.336,1.336,0,0,0,1.255.945h8.588a1.261,1.261,0,0,0,1.254-.945l1.651-5.84v-.191a.609.609,0,0,0-.661-.625Zm-5.419,0,1.984-2.767,1.98,2.767Zm1.984,5.024a1.258,1.258,0,1,1,1.319-1.258,1.3,1.3,0,0,1-1.319,1.258Zm0,0"></path></g></svg>
+                                <span class=" wdrTM">Cart</span></button>
+                             </div>
+                           </div>
+                         </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>   
-            <div class="row editRow tab-pane fade " id="vegetables">
-              <div class="col-2">
+            <div class="row editRow" >
+              <div id="vegetables" class="faq-row-content">
+                 <div class="col-2">
                 <div class="card">
                     <div class="jTTigY"><img src="images/fruits/RedCherries.jpg" class="card-img-top" alt="Cherry"></div>
                     <div class="card-body">
@@ -326,7 +333,9 @@
                     </div>
                 </div>
               </div>
+              </div>
             </div> 
+             <div class="clear"></div>
        </div>
        
       </div> 
@@ -358,6 +367,46 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+  <script>
+    $(document).ready(function() {
+
+    var tab = $('.faq-row-handle > li'),
+      tabContent = $('.faq-row-content'),
+      tabParent = $('.faq-row');
+
+    if (tab.length) {
+
+      tab.off('click').on('click', function() {
+
+        var ele = $(this),
+          currContent = $('#' + ele.attr('rel'));
+
+        if (!ele.hasClass('open')) {
+
+          tabParent.stop(true, true).animate({
+            height: '0px'
+
+          }, function() {
+            tabContent.removeClass('open');
+            currContent.addClass('open');
+            tab.removeClass('open');
+            ele.addClass('open');
+
+            tabParent.stop(true, true).animate({
+              height: currContent.height() + 'px'
+            });
+
+          });
+
+        }
+
+      });
+
+      $('.faq-row-handle > li:eq(0)').click();
+    }
+
+    });
+  </script>
   <script type="text/javascript">
    
     $('.category').click(function(){
@@ -380,9 +429,9 @@
       Array.prototype.forEach.call(dropdowns, function (dropdown) {
         if (dropdown === event.target) return;
          dropdown.removeAttribute('open');
-  });
+    });
 
-}, true);
+    }, true);
   </script>
 
 

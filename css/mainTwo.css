@@ -262,7 +262,7 @@ h2 {
 
 
 /*div on off*/
-.clear{
+ .clear{
     clear:both; 
     display:block; 
     height:0; 
@@ -283,10 +283,10 @@ h2 {
 
 .faq-row-handle {
     /*border:#ccc 1px solid; */
-   /* border-bottom:none;*/
+    border-bottom:none;
 }
 
-/*.faq-row-handle > a {
+.faq-row-handle > a {
     cursor: pointer;
     display: block;
     color: #191919;
@@ -298,21 +298,21 @@ h2 {
     outline: 0;
     float:left;
      border-right: #ccc 1px solid;
-}*/
+}
 
 .faq-row-handle a.open{
- /*  color:green;*/
+   color:green;
 }
 
 .faq-row-content {
-   color: #666;
+    color: #666;
     font-weight: normal;
     line-height: 150%;
     font-size: 13px;
-  display: none;
+    display: none;
     position:absolute;
-    top:0;
-    left:101px;
+    top:600px;
+    left:0px;
 }
 
 .faq-row-content.open{
@@ -320,5 +320,5 @@ h2 {
 }
 
 .faq-row-content p {
-    /*padding: 0 14px 10px 14px;*/
+    padding: 0 14px 10px 14px;
 }
