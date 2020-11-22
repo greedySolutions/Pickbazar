@@ -235,64 +235,6 @@ span.wdrTM {
 
 
 /*div on off*/
- .clear{
-    clear:both; 
-    display:block; 
-    height:0; 
-    width:auto;
-}
-
-.faq-row-container{
-    font-family:Arial, Helvetica, sans-serif; 
-}
-
-.faq-row {
-   /* background-color: #fff;
-    border: #ccc 1px solid;
-    margin-bottom: 12px;
-    position:relative;
-    overflow:hidden;*/
-}
-
-.faq-row-handle {
-    /*border:#ccc 1px solid; */
-    border-bottom:none;
-}
-
-.faq-row-handle > a {
-       padding: 7px 30px 7px 10px;
-    /*cursor: pointer;
-    display: block;
-    color: #191919;
-    font-weight: normal;
-    font-size: 13px;
-    padding: 7px 30px 7px 10px;
-    line-height: 20px;
-    text-decoration: none;
-    outline: 0;
-    float:left;
-     border-right: #ccc 1px solid;*/
-}
-
-.faq-row-handle a.open{
-   color:green;
-}
-
-.faq-row-content {
-    color: #666;
-    font-weight: normal;
-    line-height: 150%;
-    font-size: 13px;
-    display: none;
-    position:absolute;
-    top:600px;
-    left:0px;
-}
-
-.faq-row-content.open{
-    display:block;
-}
-
-.faq-row-content p {
-    padding: 0 14px 10px 14px;
+ .js--company-item--hidden {
+  display: none;
 }
