@@ -73,7 +73,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 
 .btn-select{
-  margin-top: 10px;
+  margin-top: 0px;
   width: 100%;
   max-width: 350px;
   height: 34px;
@@ -157,32 +157,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   display: flex;
   margin-top: 11px;
 }
-.needImg{
-   margin-right: 5px;
-    display: flex;
-}
-.join>a{
-      padding: 0px 15px;
-    font-size: 15px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    border-radius: 6px;
-    appearance: none;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    flex-shrink: 0;
-    text-align: center;
-    height: 38px;
-    text-decoration: none;
-    font-family: inherit;
-    border: 0px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 158, 127);
-}
+
+
 img.arrow {
     margin-left: -56px;
     width: 15px;
