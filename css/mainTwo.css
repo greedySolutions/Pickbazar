@@ -11,7 +11,8 @@ h2 {
     font-weight: 600;
     margin: 0px;
 }
-a:hover{text-decoration: none;}
+a:hover{text-decoration: none;
+  color: inherit;}
 /* body {margin: 0; height: 100%; overflow: hidden}*/
 
 /*///////////////////
@@ -23,7 +24,9 @@ a:hover{text-decoration: none;}
   
   /*common*/
   
-  
+  .navbarOne {
+    margin-bottom: 50px;
+}
   .logo{
        margin-left: 40px;
       width: 100px;
@@ -233,8 +236,8 @@ a:hover{text-decoration: none;}
   text-decoration: none;
   color: rgb(0, 158, 127);
   }
-  .join:hover {
-  background-color: rgb(1, 147, 118);
+ .for-btn a:hover {
+  color: #fff ;
   }
   .col-9 {
     max-width: 75% !important;
@@ -310,7 +313,7 @@ a:hover{text-decoration: none;}
     .select_wrap .select_ul{
     position: absolute;
     top: 55px;
-    left: 0;
+    left: -20;
     width: 100%;
     background: #fff;
     border-radius: 5px;
@@ -319,7 +322,7 @@ a:hover{text-decoration: none;}
     }
     
     .select_wrap .select_ul button{
-      padding: 10px 10px;
+      padding: 10px 40px;
     width: 100%;
     margin-bottom: 5px;
     font-family: Lato, sans-serif;
@@ -366,8 +369,13 @@ a:hover{text-decoration: none;}
     
     .select_wrap.active .select_ul{
       display: list-item;
-    list-style-position: inside;
-    width: 100%;
+list-style-position: inside;
+width: 100%;
+box-shadow: rgba(142, 142, 142, 0.14) 0px 3px 20px;
+min-width: 200px;
+top: calc(100% + 15px);
+z-index: 99;
+left: -20px;
     }
     
     .select_wrap.active .default_option:before{
@@ -393,6 +401,10 @@ a:hover{text-decoration: none;}
 
 /*nav end*/
 
+
+/*////////////////////
+  product section
+/////////////////////*/
 
 
 /*left section*/
@@ -536,14 +548,14 @@ font-weight: 500;
 }
 .ecebTG {
     color: rgb(13, 17, 54);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 1;
 }
 .zYpot {
     margin-bottom: 10px;
     color: rgb(153, 153, 153);
-    font-size: 20px;
+    font-size: 14px;
     font-weight: normal;
 }
 .byhaCB {
@@ -566,7 +578,6 @@ font-weight: 500;
     margin: 0px;
     -webkit-box-flex: 1;
     flex-grow: 1;
-    font-size: 16px;
 }
 .bQxKjU {
     padding-left: 16px;

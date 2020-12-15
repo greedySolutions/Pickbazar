@@ -57,7 +57,7 @@
                           <i class="fa fa-question-circle" aria-hidden="true"></i>Help
                         </a>
                       </div>
-                      <div class="col-4">
+                      <div class="col-4 for-btn">
                         <a href="#" class="join" data-toggle="modal" data-target="#exampleModal">Join</a>
                       </div>
                     </div>
@@ -478,14 +478,14 @@
   <!--nav -->
   <script>
     $(".default_option").click(function(){
-  $(this).parent().toggleClass("active");
-})
+      $(this).parent().toggleClass("active");
+    })
 
-$(".select_ul button").click(function(){
-var currentele = $(this).html();
-$(".default_option button").html(currentele);
-$(this).parents(".select_wrap").removeClass("active");
-})
+    $(".select_ul button").click(function(){
+    var currentele = $(this).html();
+    $(".default_option button").html(currentele);
+    $(this).parents(".select_wrap").removeClass("active");
+    })
 </script>
 
 </body>
